@@ -44,20 +44,18 @@ public class FindWords implements AutoCloseable {
 						}
 
 					}
-
-					for (int i = 0; i < arr.length; i++) {
-						if (foundWords.containsKey(arr[i])) {
-							continue;
-						} else {
-							set = foundWords.get(arr[i]);
-							if (set == null) {
-								set = new HashSet<String>();
-							}
-							set.add("not found");
-							foundWords.put(arr[i], set);
-						}
+				}
+			}
+			for (int i = 0; i < arr.length; i++) {
+				if (foundWords.containsKey(arr[i])) {
+					continue;
+				} else {
+					set = foundWords.get(arr[i]);
+					if (set == null) {
+						set = new HashSet<String>();
 					}
-
+					set.add("not found");
+					foundWords.put(arr[i], set);
 				}
 			}
 		}
