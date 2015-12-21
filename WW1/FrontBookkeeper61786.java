@@ -100,7 +100,6 @@ public class FrontBookkeeper61786 implements IFrontBookkeeper {
 		}
 
 		Collections.reverse(toBeAttached.getSoldiers());
-
 	}
 
 	private void detach(Unit toBeRemovedFrom, Unit toBeAttached) {
